@@ -1,18 +1,15 @@
 import React from 'react';
 import './App.css';
-import {Accordion} from "./components/Accordion";
-import {AppTitle} from "./components/AppTitle";
-import {Rating} from "./components/Rating";
+
+import {HomeWork1} from "./components/HomeWork1";
+
 
 
 function App() {
-    console.log('App rendered')
     return (
         <div className="App">
-            <AppTitle/>
-            <Rating/>
-            <Accordion title={'Menu'}/>
-            <Accordion title={'s'}/>
+            <HomeWork1/>
+
         </div>
     );
 }
