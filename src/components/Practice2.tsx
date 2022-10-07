@@ -1,7 +1,8 @@
 import React from 'react';
 import {TelListType} from "./Practice1";
+import {UserList} from "./UserList";
 
-const userInfoList = [
+const userInfoList: Array<UserInfoType> = [
     {
         id: 1,
         name: 'Alex',
@@ -24,15 +25,21 @@ const userInfoList = [
         job: 'teacher'
     },
 ]
-
-
+export type UserInfoType = {
+    id: number;
+    name: string;
+    age: number;
+    job: string;
+}
 
 export function Practice2() {
     // cards
 
     return (
         <div>
-            4325345
+            <UserList userList={userInfoList}/>
+
+
         </div>
     );
 }
